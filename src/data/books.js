@@ -30,8 +30,8 @@ const thereWereNone = {
 
 const redWhiteRoyalBlue = {
     code: 'redwhiteandroyalblue',
-    name: 'Red, White and Royal Blue',
-    image: 'assets/redwhiteroyalblue.png',
+    name: 'Red, White, and Royal Blue',
+    image: 'assets/redwhiteandroyalblue.png',
     description: 'A big-hearted romantic comedy in which First Son Alex falls in love with Prince Henry of Wales after an incident of international proportions.',
     category: 'Romance',
     price: 16.00,
@@ -70,8 +70,8 @@ const theUnhoneymooners = {
 
 const toAllTheBoys = {
     code: 'toalltheboysivelovedbefore',
-    name: 'To All The Boys I\ve Loved Before',
-    image: 'assets/toalltheboys.png',
+    name: 'To All The Boys I Have Loved Before',
+    image: 'assets/toalltheboysivelovedbefore.png',
     description: 'One day Lara Jean discovers that somehow her secret box of letters has been mailed, causing all her crushes from her past to confront her about the letters.',
     category: 'Young Adult',
     price: 14.50,

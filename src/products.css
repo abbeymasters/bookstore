@@ -1,3 +1,7 @@
+* {
+    background-color: #f7f0ea;
+}
+
 main {
     padding-top: 5%;
 }
@@ -18,18 +22,44 @@ h2 {
 #books li {
     list-style: none;
     position: relative;
-    background: white;
+    background-color: white;
     border: 0.5px solid #f44808;
     border-radius: 5px;
     width: 20%;
     height: 20%;
-    margin-right: 5px;
-    margin-bottom: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
     text-align: center;
     box-shadow: 2px 2px 3px #ccc;
     transition: transform 200ms ease-in-out;
 }
 
 #books img {
-    width: 70%;
+    height: 200px;
+    background-color: white;
+}
+
+.price, h3 {
+    background-color: white;
+    border-left: 0.5px solid #f44808;
+    border-right: 0.5px solid #f44808;
+}
+
+.price button {
+    transition: color 200ms ease-in-out;
+    font-family: Alegreya Sans;
+    font-weight: 700;
+    font-size: 16px;
+    margin-left: 3%;
+    border-radius: 20%;
+    padding: 2% 8%;
+    color: #f1a009;
+    border: 1px #f1a009 solid;
+}
+
+.price button:hover {
+    background: #white;
+    color: #d55ba4;
+    box-shadow: 2px 2px 3px #bbb;
+    border: 1px #d55ba4 solid;
 }
