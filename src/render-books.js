@@ -4,4 +4,4 @@ function renderBooks(book) {
     li.title = 'book.category';
 };
 
-export default renderBooks();
+export default renderBooks;

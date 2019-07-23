@@ -1,0 +1,32 @@
+main {
+    padding-top: 5%;
+}
+
+h2 {
+    color: #a8c6de;
+    font-size: 36px;
+    text-align: center;
+}
+
+#books {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5%;
+    justify-content: center;
+}
+
+#books li {
+    list-style: none;
+    position: relative;
+    background: white;
+    border: 0.5px solid #f44808;
+    border-radius: 5px;
+    width: 20%;
+    height: 20%;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #ccc;
+    transition: transform 200ms ease-in-out;
+}
+
