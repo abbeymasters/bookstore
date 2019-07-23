@@ -1,5 +1,5 @@
 const allTheLight = {
-    code: 'allthelight',
+    code: 'allthelightwecannotsee',
     name: 'All The Light We Cannot See',
     image: 'assets/AllTheLightWeCannotSee.png',
     description: 'A stunningly beautiful instant New York Times bestseller.',
@@ -9,7 +9,7 @@ const allTheLight = {
 };
 
 const yellowSun = {
-    code: 'yellowsun',
+    code: 'halfofayellowsun',
     name: 'Half of a Yellow Sun',
     image: 'assets/halfofayellowsun.png',
     description: 'A seminal moment in modern African history: Biafra’s impassioned struggle to establish an independent republic in Nigeria.',
@@ -29,7 +29,7 @@ const thereWereNone = {
 };
 
 const redWhiteRoyalBlue = {
-    code: 'redwhiteroyalblue',
+    code: 'redwhiteandroyalblue',
     name: 'Red, White and Royal Blue',
     image: 'assets/redwhiteroyalblue.png',
     description: 'A big-hearted romantic comedy in which First Son Alex falls in love with Prince Henry of Wales after an incident of international proportions.',
@@ -69,7 +69,7 @@ const theUnhoneymooners = {
 };
 
 const toAllTheBoys = {
-    code: 'toalltheboys',
+    code: 'toalltheboysivelovedbefore',
     name: 'To All The Boys I\ve Loved Before',
     image: 'assets/toalltheboys.png',
     description: 'One day Lara Jean discovers that somehow her secret box of letters has been mailed, causing all her crushes from her past to confront her about the letters.',
