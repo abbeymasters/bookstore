@@ -10,12 +10,13 @@ h2 {
     color: #a8c6de;
     font-size: 36px;
     text-align: center;
+    padding-bottom: 50px;
 }
 
 #books {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 5%;
+    padding-top: 1%;
     justify-content: center;
 }
 
@@ -41,8 +42,13 @@ h2 {
 
 .price, h3 {
     background-color: white;
-    border-left: 0.5px solid #f44808;
-    border-right: 0.5px solid #f44808;
+    margin: 5px;
+    height: 60px;
+}
+
+h3 {
+    color: #d75b99;
+    margin: 20px;
 }
 
 .price button {
@@ -55,11 +61,35 @@ h2 {
     padding: 2% 8%;
     color: #f1a009;
     border: 1px #f1a009 solid;
+    background: white;
 }
 
 .price button:hover {
-    background: #white;
+    background: white;
     color: #d55ba4;
     box-shadow: 2px 2px 3px #bbb;
     border: 1px #d55ba4 solid;
+}
+
+#search {
+    position: flex;
+    text-align: left;
+    padding-left: 11%;
+}
+
+#fiction, #romance, #mystery, #youngadult, #showall {
+    transition: color 200ms ease-in-out;
+    font-family: Alegreya Sans;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 5px 15px;
+    border-radius: 10%;
+    color: #f1a009;
+    background: white;
+    border: 1px #f1a009 solid;
+}
+
+#fiction:hover, #romance:hover, #mystery:hover, #youngadult:hover, #showall:hover {
+    background: white;
+    box-shadow: 2px 2px 3px #bbb;
 }
