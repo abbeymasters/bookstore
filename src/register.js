@@ -1,6 +1,8 @@
+
+export default foundBook;
 export function foundBook(books, code) {
 
-// loop the array
+// loop the array — finding correct book
 for(let i = 0; i < books.length; i++) {
     const book = books[i];
     // check the code against book.code
@@ -13,5 +15,22 @@ for(let i = 0; i < books.length; i++) {
     return null;
 }}
 
+export function calcLineTotal(quantity, price) {
+    return (quantity * price).toFixed(2);
+}
 
-export default foundBook;
+export function calcOrderTotal(cart, books) {
+
+
+// declare order total variable outside of loop
+
+    // loop array of cart (books)
+        // lookup the product of book
+        //calc line total
+        // add to order total
+
+
+        //return order total
+
+}
+
