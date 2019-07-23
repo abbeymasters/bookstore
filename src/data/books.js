@@ -12,7 +12,7 @@ const yellowSun = {
     code: 'yellowsun',
     name: 'Half of a Yellow Sun',
     image: 'assets/halfofayellowsun.png',
-    description: 'A a seminal moment in modern African history: Biafra’s impassioned struggle to establish an independent republic in Nigeria.',
+    description: 'A seminal moment in modern African history: Biafra’s impassioned struggle to establish an independent republic in Nigeria.',
     category: 'fiction',
     price: 16.00,
     cost: 8.50

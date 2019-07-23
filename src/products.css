@@ -30,3 +30,6 @@ h2 {
     transition: transform 200ms ease-in-out;
 }
 
+#books img {
+    width: 70%;
+}
