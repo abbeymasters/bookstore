@@ -1,7 +1,7 @@
 function renderBooks(book) {
     const li = document.createElement('li');
-    li.className = book.category;
-    li.title = 'book.category';
+    return li;
+
 };
 
 export default renderBooks;
