@@ -1,9 +1,16 @@
+* {
+    background-color: #f7f0ea;
+}
 
+main {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
 
 table {
     margin-top: 5%;
-    margin-left: 5%;
-    width: 80%;
+    width: 75%;
     text-align: left;
     border-collapse: collapse;
     border: 1px solid #f69b19;
@@ -18,9 +25,14 @@ tr {
 }
 
 th, td, tr {
-    padding: 20px;
+    padding: 10px;
+    padding-left: 3%;
 }
 
 tfoot {
     background: #a7bfef;
+}
+
+tr, td {
+    font-family: Darker Grotesque;
 }
