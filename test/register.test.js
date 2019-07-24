@@ -45,7 +45,7 @@ test('testing calculations', assert => {
   
 test('testing order total', assert => {
     // arrange
-    
+
     const expected = 144.90;
 
     // act
