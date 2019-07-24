@@ -20,15 +20,25 @@ export function calcLineTotal(price, quantity) {
     return Number((price * quantity).toFixed(2));
 }
 
+// eslint-disable-next-line no-unused-vars
 // declare order total variable outside of loop
+export function orderTotal(cart, books) {
+    const total = 0;
+    // loop array of cart (line items)
+    for (i = 0; i < order.length; i++) {
+        const shoppingCart = cart[i].code;
 
-    // loop array of cart (books)
-        // lookup the product of book
+        // lookup the product (books)
+       if(shoppingCart === )
+        
         //calc line total
+        let line = calcLineTotal();
+
         // add to order total
-
-
-        //return order total
-
-// }
+        total =+ line;
+    }
+    //return order total
+    return total;
+}
+// 
 
