@@ -1,14 +1,14 @@
 export default function findBook(books, code) {
  
 // loop the array — finding correct book
-for(let i = 0; i < books.length; i++) {
-    const book = books[i];
+    for(let i = 0; i < books.length; i++) {
+        const book = books[i];
     // check the code against book.code
-    if(book.code === code) {
+        if(book.code === code) {
         // if true return found book
-    return book;
+            return book;
         // if false just keep going
-     }
+        }
     }
 // loop done
     return null;
@@ -24,7 +24,7 @@ export function calcLineTotal(price, quantity) {
 export function orderTotal(cart, books) {
     let total = 0;
     // loop array of cart (line items)
-    for (let i = 0; i < cart.length; i++) {
+    for(let i = 0; i < cart.length; i++) {
         let shoppingCart = cart[i].code;
         let cartQuantity = cart[i].quantity;
 

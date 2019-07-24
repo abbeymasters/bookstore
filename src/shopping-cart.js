@@ -23,8 +23,8 @@ for(let i = 0; i < cart.length; i++) {
 }
 
 // locate the table cell in the footer where the order total will go
-    const orderTotalCell = document.getElementById('order-total-cell');
+const orderTotalCell = document.getElementById('order-total-cell');
 
 // use the getOrderTotal function to calculate the order total
-    const finalTotal = orderTotal(cart, books).toLocaleString('en-US', { style: 'currency', currency: 'USD' });;
-    orderTotalCell.textContent = finalTotal;
+const finalTotal = orderTotal(cart, books).toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+orderTotalCell.textContent = finalTotal;

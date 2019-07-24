@@ -28,6 +28,6 @@ function renderBooks(book) {
     li.appendChild(p);
     return li;
 
-};
+}
 
 export default renderBooks;
