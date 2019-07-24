@@ -1,6 +1,6 @@
 import books from '../src/data/books.js';
 import findBook from '../src/register.js';
-import calcLineTotal from '../src/register.js';
+import { calcLineTotal } from '../src/register.js';
 
 const test = QUnit.test;
 
