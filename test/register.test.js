@@ -2,6 +2,7 @@ import books from '../src/data/books.js';
 import findBook from '../src/register.js';
 import { calcLineTotal } from '../src/register.js';
 import { orderTotal } from '../src/register.js';
+import cart from '../src/data/order.js';
 
 const test = QUnit.test;
 
@@ -44,11 +45,12 @@ test('testing calculations', assert => {
   
 test('testing order total', assert => {
     // arrange
-
+    
     const expected = 144.90;
 
     // act
-    const finalTotal = orderTotal(order, books);
+    const finalTotal = orderTotal(cart, books);
+
     
     // assert
     assert.equal(finalTotal, expected);
