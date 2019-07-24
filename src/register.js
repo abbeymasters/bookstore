@@ -1,6 +1,4 @@
-
-export default foundBook;
-export function foundBook(books, code) {
+export default function findBook(books, code) {
 
 // loop the array — finding correct book
 for(let i = 0; i < books.length; i++) {
@@ -10,17 +8,17 @@ for(let i = 0; i < books.length; i++) {
         // if true return found bool
     return book;
         // if false just keep going
+     }
     }
 // loop done
     return null;
-}}
-
-export function calcLineTotal(quantity, price) {
-    return (quantity * price).toFixed(2);
 }
 
-export function calcOrderTotal(cart, books) {
+// line total function
 
+export function calcLineTotal(price, quantity) {
+    return Number((price * quantity).toFixed(2));
+}
 
 // declare order total variable outside of loop
 
@@ -32,5 +30,5 @@ export function calcOrderTotal(cart, books) {
 
         //return order total
 
-}
+// }
 
