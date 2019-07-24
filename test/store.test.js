@@ -1,11 +1,14 @@
 import store from '../src/data/store.js';
+import books from '../src/data/books.js';
 
 const test = QUnit.test;
 
 QUnit.module('data store');
 
+store.storage.clear;
+
 QUnit.testStart(() => {
-    store.storage.clear();
+    store.storage = window.sessionStorage;
 });
 
 test('get and save', assert => {
@@ -20,4 +23,16 @@ test('get and save', assert => {
     // assert
     assert.deepEqual(got, cat);
 
+});
+
+
+test('getting product and retur bootstrapped data', assert => {
+    // arrange
+    
+    // act
+    const products = store.getProducts();
+
+    
+    // assert
+    assert.deepEqual(products, books);
 });

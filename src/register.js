@@ -25,11 +25,11 @@ export function orderTotal(cart, books) {
     let total = 0;
     // loop array of cart (line items)
     for(let i = 0; i < cart.length; i++) {
-        let shoppingCart = cart[i].code;
+        let itemCode = cart[i].code;
         let cartQuantity = cart[i].quantity;
 
         // lookup the product (books)
-        const lookUp = findBook(books, shoppingCart);
+        const lookUp = findBook(books, itemCode);
 
         //calc line total
         let line = calcLineTotal(lookUp.price, cartQuantity);
