@@ -1,4 +1,4 @@
-import renderBooks from '/src/render-books.js';
+import renderBooks from '../src/render-books.js';
 
 const test = QUnit.test;
 
