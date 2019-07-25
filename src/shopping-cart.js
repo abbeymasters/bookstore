@@ -1,7 +1,5 @@
 import books from './data/books.js';
-import cart from './data/order.js';
 import renderLineItem from './render-line-item.js';
-import findBook from './register.js';
 import { orderTotal } from './register.js';
 import store from './data/store.js';
 
