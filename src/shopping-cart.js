@@ -9,20 +9,18 @@ import store from './data/store.js';
 // locate the table element where your products will go
 const tbody = document.querySelector('tbody');
 
-// adding in pulling products from store
-store.getProducts();
-
 // load shopping cart on page load
-store.getShoppingCart();
+const shoppingCart = store.getShoppingCart();
 
 // loop through your data
-for(let i = 0; i < cart.length; i++) {
+for(let i = 0; i < shoppingCart.length; i++) {
 
 // Create a variable for that is the singular of your domain list
-    const lineItem = cart[i];
+    const lineItem = shoppingCart[i];
 
 // Create a variable that is the found product for that line item
-    const book = findBook(books, lineItem.code);
+// going to change this to store.findBook to pull from store, not array
+    const book = store.findBook(books, lineItem.code);
 
 // Pass line item and product to your DOM generation function and capture result in variable
     const dom = renderLineItem(lineItem, book);
@@ -34,5 +32,5 @@ for(let i = 0; i < cart.length; i++) {
 const orderTotalCell = document.getElementById('order-total-cell');
 
 // use the getOrderTotal function to calculate the order total
-const finalTotal = orderTotal(cart, books).toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+const finalTotal = orderTotal(shoppingCart, books).toLocaleString('en-US', { style: 'currency', currency: 'USD' });
 orderTotalCell.textContent = finalTotal;

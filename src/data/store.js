@@ -64,6 +64,20 @@ const store = {
         const foundBook = findBook(getProducts, code);
         // return product
         return foundBook;
+    }, 
+    findBook(books, code) {
+        // loop the array — finding correct book
+        for(let i = 0; i < books.length; i++) {
+            const book = books[i];
+            // check the code against book.code
+            if(book.code === code) {
+                // if true return found book
+                return book;
+                // if false just keep going
+            }
+        }
+        // loop done
+        return null;
     }
 };
 
