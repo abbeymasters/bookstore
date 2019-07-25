@@ -1,3 +1,5 @@
+import store from './data/store.js';
+
 function renderBooks(book) {
     const li = document.createElement('li');
     li.className = book.category;
@@ -23,6 +25,10 @@ function renderBooks(book) {
     const button = document.createElement('button');
     button.textContent = 'Add';
     button.value = book.code;
+    // adding button click to add product to store
+    button.addEventListener('click', () => {
+        store.orderProduct(button.value);
+    });
     p.appendChild(button);
 
     li.appendChild(p);

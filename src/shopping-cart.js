@@ -3,9 +3,17 @@ import cart from './data/order.js';
 import renderLineItem from './render-line-item.js';
 import findBook from './register.js';
 import { orderTotal } from './register.js';
+import store from './data/store.js';
+
 
 // locate the table element where your products will go
 const tbody = document.querySelector('tbody');
+
+// adding in pulling products from store
+store.getProducts();
+
+// load shopping cart on page load
+store.getShoppingCart();
 
 // loop through your data
 for(let i = 0; i < cart.length; i++) {

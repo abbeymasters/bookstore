@@ -22,9 +22,7 @@ test('generic get and save', assert => {
 
     // assert
     assert.deepEqual(get, book);
-
 });
-
 
 test('Get Products with Bootstrapped Default', assert => {
     // arrange
