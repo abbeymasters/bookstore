@@ -8,7 +8,7 @@ QUnit.module('data store');
 store.storage = window.sessionStorage;
 
 QUnit.testStart(() => {
-    store.storage.clear;
+    store.storage.clear();
 });
 
 test('generic get and save', assert => {
@@ -59,8 +59,8 @@ test('Add product to empty shopping cart', assert => {
     store.orderProduct(code);
     store.orderProduct(code);
     let theCart = store.getShoppingCart();
-    
 
     // assert
     assert.deepEqual(theCart, expected);
 });
+
