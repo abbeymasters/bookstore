@@ -64,3 +64,14 @@ test('Add product to empty shopping cart', assert => {
     assert.deepEqual(theCart, expected);
 });
 
+test('getProduct(code)', (assert) => {
+    // arrange
+    const code = 'allthelightwecannotsee';
+    const expected = books[0];
+
+    // act
+    const book = store.getProduct(code);
+
+    // assert
+    assert.deepEqual(book, expected);
+});

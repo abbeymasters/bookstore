@@ -32,10 +32,12 @@ const store = {
         // get shopping cart
         const getCart = store.getShoppingCart();
 
-        // need to pull line item
+        // need to pull the line item
         const lineItem = findBook(getCart, code);
+        // if the lineItem is in there already -- add one
         if(lineItem) {
             lineItem.quantity++;
+        // otherwise add it in to array
         } else {
             let lineItem = {
                 code: code,
@@ -46,6 +48,14 @@ const store = {
         }
         // save shopping cart
         store.save('shopping-cart', getCart);
+    }, 
+    getProduct(code) {
+        // find the products
+        const getProducts = store.getProducts();
+        // find based on the code
+        const foundBook = findBook(getProducts, code);
+        // return product
+        return foundBook;
     }
 };
 
