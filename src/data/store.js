@@ -2,6 +2,7 @@ import books from './books.js';
 
 const store = {
     storage: window.localStorage, 
+    
     save(key, item) {
         const json = JSON.stringify(item);
         store.storage.setItem(key, json);
@@ -17,8 +18,17 @@ const store = {
         if(!products) {
             store.save('products', books);
             products = books;
-        }
+        } 
         return products;
+    },
+    getShoppingCart() {
+        let shoppingCart = store.get('shopping-cart');
+        if(!shoppingCart) {
+            shoppingCart = [];        
+        } return shoppingCart;
+    }, 
+    addProduct(code) {
+        
     }
 };
 

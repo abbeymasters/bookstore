@@ -5,34 +5,54 @@ const test = QUnit.test;
 
 QUnit.module('data store');
 
-store.storage.clear;
+store.storage = window.sessionStorage;
 
 QUnit.testStart(() => {
-    store.storage = window.sessionStorage;
+    store.storage.clear;
 });
 
-test('get and save', assert => {
+test('generic get and save', assert => {
     // arrange
-    const key = 'cat';
-    const cat = { name: 'felix' };
+    const key = 'book';
+    const book = { name: 'jane eyre' };
 
     // act
-    store.save(key, cat);
-    const got = store.get(key);
+    store.save(key, book);
+    const get = store.get(key);
 
     // assert
-    assert.deepEqual(got, cat);
+    assert.deepEqual(get, book);
 
 });
 
 
-test('getting product and retur bootstrapped data', assert => {
+test('Get Products with Bootstrapped Default', assert => {
     // arrange
-    
+
     // act
     const products = store.getProducts();
-
     
     // assert
     assert.deepEqual(products, books);
+});
+
+test('Get Shopping Cart to Equal Empty Array', assert => {
+    // arrange
+
+    // act
+    const shoppingCart = store.getShoppingCart();
+
+    // assert
+    assert.deepEqual(shoppingCart, []);
+
+});
+
+test('Add product to empty shopping cart', assert => {
+  // arrange
+
+    // act
+   
+
+    // assert
+    assert.deepEqual();
 });
