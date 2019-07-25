@@ -45,7 +45,22 @@ test('Get Shopping Cart to Equal Empty Array', assert => {
 
 });
 
-test('Add product to empty shopping cart', assert => {
+test('Order Product Code to Empty Shopping Cart', assert => {
+    // arrange
+    const code = 'thegonedead';
+    const expected = [{ 
+        code: 'thegonedead', 
+        quantity: 1
+    }];
+    // act 
+    store.orderProduct(code);
+    const shoppingCart = store.getShoppingCart();
+
+    // assert
+    assert.deepEqual(shoppingCart, expected);
+});
+
+test('Add product to empty shopping cart multiple times', assert => {
     // arrange
     const code = 'thegonedead';
     const expected = [{ 
