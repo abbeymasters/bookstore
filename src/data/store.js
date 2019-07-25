@@ -1,4 +1,5 @@
 import books from './books.js';
+import findBook from '../register.js';
 
 const store = {
     storage: window.localStorage, 
@@ -27,8 +28,24 @@ const store = {
             shoppingCart = [];        
         } return shoppingCart;
     }, 
-    addProduct(code) {
-        
+    orderProduct(code) {
+        // get shopping cart
+        const getCart = store.getShoppingCart();
+
+        // need to pull line item
+        const lineItem = findBook(getCart, code);
+        if(lineItem) {
+            lineItem.quantity++;
+        } else {
+            let lineItem = {
+                code: code,
+                quantity: 1
+            };
+            // put in shopping cart array
+            getCart.push(lineItem);
+        }
+        // save shopping cart
+        store.save('shopping-cart', getCart);
     }
 };
 
