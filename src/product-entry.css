@@ -1,5 +1,6 @@
 main {
-    margin-left: 50px;
+    margin-left: 40%;
+    width: 100%;
     margin-top: 75px;
 }
 
@@ -17,6 +18,7 @@ h2 {
     padding: .5% 3%;
     color: #f1a009;
     border: 1px #f1a009 solid;
+    margin-bottom: 200px;
 }
 
 #submit:hover {

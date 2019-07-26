@@ -88,3 +88,23 @@ test('getProduct(code)', (assert) => {
     // assert
     assert.deepEqual(book, expected);
 });
+
+test('addProduct(product)', assert => {
+    // arrange
+    const product = { code: 'americanah',
+        name: 'Americanah',
+        image: 'americanah.png',
+        description: 'Stunning work of fiction.',
+        category: 'fiction',
+        price: 12.50,
+        cost: 5.45 
+    };
+    
+    // act
+    store.addProduct(product);
+    const books = store.getProducts();
+
+    // assert
+    assert.deepEqual(books[books.length - 1], product);
+
+});

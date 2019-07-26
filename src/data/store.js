@@ -78,6 +78,11 @@ const store = {
         }
         // loop done
         return null;
+    },
+    addProduct(product) {
+        const products = this.getProducts();
+        products.push(product);
+        store.save('products', products);
     }
 };
 
