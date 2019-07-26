@@ -1,0 +1,34 @@
+main {
+    margin-left: 50px;
+    margin-top: 75px;
+}
+
+h2 {
+    color: #d75595;
+}
+
+#submit {
+    margin-top: 10px;
+    transition: color 200ms ease-in-out;
+    font-family: Alegreya Sans;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 20%;
+    padding: .5% 3%;
+    color: #f1a009;
+    border: 1px #f1a009 solid;
+}
+
+#submit:hover {
+    color: #d55ba4;
+    box-shadow: 2px 2px 3px #bbb;
+    border: 1px #d55ba4 solid;
+}
+
+input {
+    background: white;
+    border-radius: 3px;
+    height: 16px;
+    margin-left: 10px;
+    width: 15%;
+}
