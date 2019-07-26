@@ -1,4 +1,3 @@
-import books from './data/books.js';
 import renderLineItem from './render-line-item.js';
 import { orderTotal } from './register.js';
 import store from './data/store.js';
@@ -18,7 +17,7 @@ for(let i = 0; i < shoppingCart.length; i++) {
 
 // Create a variable that is the found product for that line item
 // going to change this to store.findBook to pull from store, not array
-    const book = store.findBook(books, lineItem.code);
+    const book = store.getProduct(lineItem.code);
 
 // Pass line item and product to your DOM generation function and capture result in variable
     const dom = renderLineItem(lineItem, book);
@@ -30,5 +29,5 @@ for(let i = 0; i < shoppingCart.length; i++) {
 const orderTotalCell = document.getElementById('order-total-cell');
 
 // use the getOrderTotal function to calculate the order total
-const finalTotal = orderTotal(shoppingCart, books).toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+const finalTotal = orderTotal(shoppingCart, book).toLocaleString('en-US', { style: 'currency', currency: 'USD' });
 orderTotalCell.textContent = finalTotal;
