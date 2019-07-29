@@ -1,5 +1,6 @@
 import books from './books.js';
 import findBook from '../register.js';
+import sales from './sales.js';
 
 const store = {
     // keep storage local as opposed to session
@@ -39,7 +40,6 @@ const store = {
     orderProduct(code) {
         // get shopping cart
         const getCart = store.getShoppingCart();
-
         // need to pull the line item
         const lineItem = findBook(getCart, code);
         // if the lineItem is in there already -- add one
@@ -83,6 +83,11 @@ const store = {
         const products = this.getProducts();
         products.push(product);
         store.save('products', products);
+    }, 
+    getSales() {
+        const sales = this.getShoppingCart();
+        
+        return 
     }
 };
 
