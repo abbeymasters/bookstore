@@ -1,0 +1,60 @@
+* {
+    background-color: #f7f0ea;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+table {
+    margin-top: 5%;
+    width: 75%;
+    text-align: left;
+    border-collapse: collapse;
+    border: 1px solid #f69b19;
+}
+
+tbody tr:nth-child(even) {
+    background: black;
+}
+
+tr {
+    text-align: left;
+}
+
+th, td, tr {
+    padding: 10px;
+    padding-left: 3%;
+}
+
+tfoot {
+    background: #a7bfef;
+}
+
+tr, td {
+    font-family: Darker Grotesque;
+}
+
+#second-section {
+    display: flex;
+    padding-top: 3%;
+    justify-content: center;
+    align-items: center;
+}
+
+#checkoutbutton {
+    transition: color 200ms ease-in-out;
+    font-family: Alegreya Sans;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 5px 15px;
+    border-radius: 10%;
+    color: #cb5e9f;
+    border: 1px #cf639f solid;
+}
+
+#checkoutbutton:hover {
+    box-shadow: 2px 2px 3px #bbb;
+}
